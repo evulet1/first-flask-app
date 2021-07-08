@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head></head>
-<body>
-    <h1>{{post['title']}}</h1>
-    <p>{{post['content']}}</p>
+{% extends 'base.jinja2' %}
 
-</body>
-</html>
+{% block content %}
+<h1>{{post['title']}}</h1>
+<p>{{post['content']}}</p>
+{% endblock %}
