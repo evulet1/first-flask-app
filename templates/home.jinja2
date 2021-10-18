@@ -8,4 +8,6 @@
         <li><a href="{{url_for('post', post_id=post_id)}}">{{post['title']}}</a></li>
     {%  endfor %}
 </ul>
+
+<a href="{{url_for('create')}}">Create post</a>
 {% endblock%}
